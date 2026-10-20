@@ -1,17 +1,15 @@
-duyun5 = [None, "E", None]
-duyun4 = [None, "D", duyun5]
-duyun5[0] = duyun4  
-duyun3 = [None, "C", duyun4]
-duyun4[0] = duyun3  
-duyun2 = [None, "B", duyun3]
-duyun3[0] = duyun2  
-duyun1 = [None, "A", duyun2]
-duyun2[0] = duyun1  
-cari = duyun1
-while cari is not None:
-    print(cari[1])
-    cari = cari[2] 
-cari = duyun5
-while cari is not None:
-    print(cari[1])
-    cari = cari[0]  
+row = {"cell_id": "BAK-0207", "region": "Nesimi", "rsrp_dbm": -108.1}
+print(row["region"])
+print(row["rsrp_dbm"])
+row["band"] = "LTE800"
+print(row)
+
+row["region"]="Yasamal"
+print(row)
+
+
+rsrp_list = [-91.5, -108.1, -86.2, -103.3, -110.4]
+for v in rsrp_list:
+    print(v)
+    v = v * int(input())
+    print(v)
